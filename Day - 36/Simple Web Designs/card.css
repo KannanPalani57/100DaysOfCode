@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  font-family: "Montserrat";
+}
+
+.card-container {
+  width: 300px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+  display: inline-block;
+}
+.upper-container {
+  height: 150px;
+  background: #7f00ff;
+}
+
+.image-container {
+  height: 80px;
+  width: 80px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(100px, 100px);
+}
+
+.image-container img {
+  height: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.lower-container {
+  margin-top: 50px;
+  height: 280px;
+  background: #fff;
+  text-align: center;
+}
+
+.lower-container h3,
+h4 {
+  box-sizing: border-box;
+  line-height: 0.6;
+}
+
+.lower-container h4 {
+  color: #7f00ff;
+  opacity: 0.6;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.lower-container p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: darkgray;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.lower-container .btn {
+  padding: 12px 20px;
+  background: #7f00ff;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+
+.lower-container .btn:hover {
+  background: transparent;
+  color: #7f00ff;
+  border: 1px solid #7f00ff;
+}
