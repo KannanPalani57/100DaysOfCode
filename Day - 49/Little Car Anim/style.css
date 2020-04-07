@@ -1,0 +1,187 @@
+.ball{
+    position: absolute;
+    top: 60%;
+    left: 63%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #000;
+    animation: go1 0.2s infinite;
+}
+.ball1{
+    position: absolute;
+    top: 60%;
+    left: 52%;
+    padding: 19px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: black;
+   animation: go 0.2s infinite;
+}
+
+@keyframes go1{
+    from{
+        transform: rotate(0deg) translateX(1px);
+
+    }
+    to{
+        transform: rotate(360deg) translateX(1px);
+    }
+}
+
+@keyframes go{
+    from{
+        transform: rotate(0deg) translateX(1px);
+
+    }
+    to{
+        transform: rotate(360deg) translateX(1px);
+    }}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+}
+
+.square{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 100px;
+    border: 2px solid #000;
+    background: coral;
+}
+
+
+.smallsquare{
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    border: 2px solid #000;
+    background: lightcoral
+
+}
+
+.rectangle{
+    position: absolute;
+    z-index: 4px;
+    top: 47%;
+    left: 72.1%;
+    width: 55px;
+    height: 120px;
+    border: 2px solid #000;
+    background: lightcoral
+}
+
+
+.line{
+    position: absolute;
+    top: 40%;
+    left: 75.5%;    
+    width: 4px;
+    height: 45px;
+    border: 2px solid #000;
+
+}
+
+.flag{
+    position: absolute;
+    top: 38%;
+    left: 75.5%;
+    width: 50px;
+    height: 30px;
+    background: lightgray;
+    border: 3px solid black;
+//    animation: rotate 3s infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.road{
+    position: absolute;
+    top: 67%;
+    height: 70px;
+    width: 100%;
+    background: black;
+}
+
+.bigline{
+    position: relative;
+    top: 30px;
+    left: 100px;
+    width: 100px;
+    height: 9px;
+    background: white;
+    animation: goline 0.5s infinite;
+}
+
+@keyframes goline{
+    from{
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+
+.bigline1{
+    position: relative;
+    top: 21px;
+    left: 300px;
+    width: 100px;
+    height: 9px;
+    background: white;
+    animation: goline 0.5s infinite;
+}
+
+
+.bigline2{
+    position: relative;
+    top: 12px;
+    left: 500px;
+    width: 100px;
+    height: 9px;
+    background: white;
+    animation: goline 0.5s infinite;
+}
+
+
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 72.8%;
+    height: 50px;
+    width: 45px;
+    border: 2px solid black;
+}
+
+boxinside{
+    position: relative;
+    top: 38px;
+    height: 40px;
+    widows: 20px;
+    border: 2px solid black;
+}
+
