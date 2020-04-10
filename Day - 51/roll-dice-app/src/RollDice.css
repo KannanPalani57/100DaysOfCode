@@ -1,0 +1,15 @@
+.die{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h2{
+    position: relative;
+    top: 10%;
+    color: darkslateblue;
+    margin-top: 50px;
+    font-size: 30px;
+
+}

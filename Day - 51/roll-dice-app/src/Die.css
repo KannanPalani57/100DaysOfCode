@@ -1,0 +1,22 @@
+i{
+   font-size: 10em; 
+  padding: 0.25em;
+  color:  darkslateblue;
+}
+
+
+button{
+   font-size: 25px;
+   background: darkslateblue;
+   color: white;
+   padding: 25px;
+   border-radius: 13px;
+   margin: 8px 10px;
+   margin-top: 7px;
+
+}
+
+
+button:hover{
+   box-shadow: 0px 0px 1px 1px darkslateblue;
+}
