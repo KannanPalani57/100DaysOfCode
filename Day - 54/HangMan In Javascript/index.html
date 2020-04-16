@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HangMan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HangMan</h1>
+    <p>Hurry, Guess the Letter Within The 6 limits</p>
+    <div class="game-container"> <!--Static Part-->
+        <svg class="figure-container" height= "250" width = "200">
+            <line x1 = "60" y1 = "20" x2 = "140" y2 = "20" />
+            <line x1 = "140" y1 = "20" x2 = "140" y2 = "50" />
+            <line x1 = "60" y1 = "20" x2 = "60" y2 = "230" />
+            <line x1 = "20" y1 = "230" x2 = "100" y2 = "230" />
+
+          <!--Circle-->
+<circle cx = "140" cy = "70" r = "20" class = "figure-part" />
+
+           <!--Body-->
+<line x1 = "140" y1 = "90" x2 = "140" y2 = "150" class = "figure-part"/>
+           
+           <!--Arms-->
+<line x1 = "140" y1 = "120" x2 = "120" y2 = "100" class = "figure-part"/>
+<line x1 = "140" y1 = "120" x2 = "160" y2 = '100' class = "figure-part"/>
+
+           <!--Legs-->
+<line x1 = "140" y1 = '150' x2 = "120" y2 = "180" class = "figure-part"/> 
+<line x1 = "140" y1 = "150" x2 = "160" y2 = "180" class = "figure-part"/>
+        </svg>
+
+        <div class="wrong-letters-container">
+            <div id="wrong-letters">
+                <p>Wrong</p>
+            </div>
+
+        </div>
+            <div class="word" id="word">
+             <div class="letter">c</div>
+             <div class="letter">o</div>
+             <div class="letter">d</div>
+             <div class="letter">e</div>
+            </div>
+        </div>
+
+
+       <div class="popup-container" id="popup-container">
+           <div class="popup">
+               <div id="final-message">
+                   <h3>
+                   </h3></div>
+               <div id="play-button">
+                   <button>Play Again!</button></div>
+           </div>
+       </div>
+
+        <div class="notification-container show" id="notification-container">
+            <p>You have already typed this letter..</p>
+        </div>
+
+</body>
+</html>
