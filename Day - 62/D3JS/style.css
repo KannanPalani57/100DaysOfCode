@@ -1,0 +1,12 @@
+.container{
+    width: 25px;
+    height: 100px;
+    display: inline-block;
+    background-color: purple;
+}
+
+svg{
+    //background: salmon;
+    display: block;
+    margin-top: 20px;
+}
