@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;  
+    box-sizing: border-box;
+   font-family: 'Josefin Sans', arial;
+}
+body{
+    background: #f3f5f9;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper .navbar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #4b4276;
+    padding: 30px 0;
+}
+.wrapper .navbar h2{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.wrapper .navbar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225, 0.05);
+}
+.wrapper .navbar ul li a{
+    color: #bdb8d7;
+    display: block;
+}
+.wrapper .navbar ul li:hover{
+    background: #59488d;
+}
+
+.wrapper .navbar ul li:hover a{
+    color: #fff;
+}
+.wrapper .main-content{
+    width: 100%;
+    margin-left: 200px;
+}
+.wrapper .main-content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+}
+.wrapper .main-content .info {
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+    
+}
+
+.wrapper .main-content .info div{
+    margin-bottom: 20px;
+}
+.wrapper .main-content .info img{
+    width: 500px;
+    height: 500px;
+}
