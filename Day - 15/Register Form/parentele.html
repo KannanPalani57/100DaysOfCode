@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <ul>
+            <p id = "li">Tea</p>
+            <li>Coffe</li>
+        </ul>
+        <button onclick="myFunction()">Try</button>
+        <p id = "demo"></p>
+        <script>
+           var x = document.getElementById("li").parentElement.nodeName;
+           var y = document.getElementById("li").parentElement.parentNode;
+           document.getElementById("demo").innerHTML = x;
+       //    document.getElementById("demo").innerHTML = y;
+    
+        </script>
+    </body>
+</html>
