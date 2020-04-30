@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Krish",
+         "age": 23,
+         "height": 172,
+         "hair-color": "black"    
+    },
+    {
+        "name": "Yogi",
+         "age": 25,
+         "height": 172,
+         "hair-color": "black"    
+    }, {
+        "name": "Abi",
+         "age": 18,
+         "height": 166,
+         "hair-color": "Grey"    
+    }, {
+        "name": "Logi",
+         "age": 13,
+         "height": 172,
+         "hair-color": "Black & Grey"    
+    }
+]
