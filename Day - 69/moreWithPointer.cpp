@@ -2,39 +2,26 @@
 
 using namespace std;
 
-/*
-int *doSomething(){
-  int z = 5;
-
-  int answer = *(&z);
-  return answer;
-
-
-
-
-
-
 int main()
 {
    int x = 5;
    int y = 3;
 
-  // cout<<b<<endl;
-
    cout<<"Value of X = "<<x<<endl;
     //get the memory address of this variable.
    cout<<"Memory address of x = "<<&x<<endl;
    cout<<"Memory address of y = "<<&y<<endl;
-   //cout<<"Value of Y = "<<*(&y)<<endl;  //it access the value of its memory address
+   //cout<<"Value of Y = "<<*(&y)<<endl;  
+   //it access the value of its memory address
 
-   int *valueY = &y;
+//Without Null Pointers, Pointers may points to Other Values.
+   int *valueY = NULL;   //Null Pointers.  
+   valueY = &y;
 
-   cout<<"Value of Y = "<<*valueY<<endl;
-
-
+   cout<<"Value of Y = "<<*valueY<<endl;   //3
     return 0;
 }
-*/
+
 
 
 int main(){
@@ -61,3 +48,10 @@ int main(){
  cout<<a;  return 0;
 
 }
+
+int *doSomething(){
+  int z = 5;
+
+  int answer = *(&z);
+  return answer;
+
