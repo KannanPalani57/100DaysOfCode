@@ -30,7 +30,7 @@ int main()
        totalMark = totalMark + marks[mark];//or totalMark += mark;
 
        if(marks[mark] > 80){
-         cout<<marks[mark]<<endl;
+         cout<<marks[mark]<<endl;   //getting best marks
        }
     }
 
