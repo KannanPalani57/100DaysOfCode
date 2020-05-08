@@ -17,5 +17,5 @@ int main()
   integers.push_back(a);
 
   for(int i = 0; i < integers.size(); i++)
-  cout << integers[i] << "\n";
+  cout << integers[i] << "\n";    //numbers one by one..
 }
