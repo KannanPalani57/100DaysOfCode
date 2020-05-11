@@ -1,23 +1,22 @@
 #include <iostream>
 #include<string>
+#define MAX_SIZE 50
 
 using namespace std;
-#define MAX_SIZE 50
+
  struct Student{
-         int age;
+ int age;
  string first_name;
  string last_name;
  int standard;
   };
 
-
-
-
 int main() {
     Student st;
 
     cin >> st.age >> st.first_name >> st.last_name >> st.standard;
-    cout << st.age << " " << st.first_name << " " << st.last_name << " " << st.standard;
+    cout << st.age << " " << st.first_name << " " << st.last_name << " "
+                                                     << st.standard;
 
     return 0;
 }
