@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block head%}
+<title>Posts</title>
+{% endblock %}
+
+{% block body %}
+<h1>Students</h1>
+{% for student in students %}
+  <h1>Name : {{student.name}}</h1>
+  <p>Dept: {{student.class}}</p>
+{% endfor %}
+{% endblock %}
+
+<!--that's how we're passing the value
+into the base html
+
+-->
