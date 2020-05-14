@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block head%}
+<title>Posts</title>
+{% endblock %}
+
+
+
+{% block body %}
+<hr>
+<form action = "/posts" method = "POST">
+Name : <input type = "text" name = "name" id = "name">
+Class: <input type = "text" name = "class" id = "class">
+<input type = "submit" value = "Post">
+</form>
+<hr>
+
+<h1>Students</h1>
+{% for student in students %}
+  <h1>Name : {{student.name}}</h1>
+  <p>Dept: {{student.dept}}</p>
+  <a href = "/posts/delete/{{student.id}}">delete</a>
+{% endfor %}
+{% endblock %}
+
+<!--that's how we're passing the value
+into the base html
+
+-->
