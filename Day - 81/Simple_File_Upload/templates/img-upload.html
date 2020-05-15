@@ -1,0 +1,9 @@
+{% extends "main.html" %} {% block head %}
+<title>Image Upload (Flask App)</title>
+{% endblock %} {% block body %}
+<form action="/img-upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="file" id="file" />
+  <br />
+  <button type="submit">Submit</button>
+</form>
+{% endblock%}
