@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+  }
+  nav{
+  height: 55px;
+  background: slateblue
+}
+#nav-text{
+   position:relative;
+   top: 12px;
+   left: 10%;
+   color: white;
+   font-weight: bold;
+}
+#p-text{
+   position:relative;
+   top: -17px;
+   text-decoration: none;
+   font-weight: bold;
+   left: 80%;
+   color: white;
+   font-weight: bold;
+}
+#p-text:hover{
+   color: whitesmoke;
+  
+}
+footer{
+  margin-top: 200px;
+  height: 50px;
+  text-align: center;
+  width: 69em;
+  background-color: slateblue;
+}
+#f-text{
+   margin-top: 15px;
+   color: white;
+   font-weight: bold;
+   
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; 
+    transform: translateX(50%); 
+}
+.a{
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    background: slateblue;
+    border-radius: 3px;
+    color: white;   
+    box-shadow: 0px 0px 1px 2px slateblue;
+    padding: 5px 5px;
+  
+}
+</style>
+
+<body>
+    <nav>
+        <p id = "nav-text">Image Upload Process</p>
+        <a href = "/" id = "p-text">Logout</a>
+    </nav>
+    <div id="container"></div>
+    <h2 style="margin-left: 600px;color: green">Success!!</h2>
+    <h3 style="margin-left: 500px;">File Uploaded Successfully</h3>
+    <h4 style="margin-left: 550px;">File Name: {{name}}</h4>
+</div>
+<a class = "a" style = "
+ margin-top: 25px;
+    margin-left: 550px;
+" href= "/img-upload">Back to Upload Image</a>
+<footer>
+    <p id = "f-text">End(Footer)(Thank You!)</p>
+    <p>{{j}}</p>
+  </footer>
+</body>
+</html>

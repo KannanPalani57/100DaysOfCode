@@ -1,0 +1,139 @@
+{% extends "main.html" %} {% block head %}
+<title>Image Upload (Flask App)</title>
+{% endblock %} {% block body %}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+  *{
+    font-family: 'Space Mono', monospace;
+  }
+  nav{
+  
+  height: 55px;
+  background: slateblue
+}
+#nav-text{
+   position:relative;
+   top: 12px;
+   left: 10%;
+   color: white;
+   font-weight: bold;
+}
+ [type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+ 
+[type="file"] + label {
+  background-color: slateblue;
+  width: 170px;
+   font-size: 20px;
+  height: 40px;
+  padding-top: 4px;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 2rem 4rem;
+}
+  
+form{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+[type="file"]:focus + label,
+[type="file"] + label:hover {
+    background-color: #fff;
+    color: black;
+}
+  
+[type="file"]:focus + label {
+  outline: 1px dotted #000;
+}
+form button{
+  position: relative;
+  bottom: 17px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 1px 1px slategray;
+  width: 100px;
+  background: grey;;
+  color: #fff;
+}
+
+
+.logout{
+  position: absolute;
+  top: 13px;
+  left: 85%;
+  color:white;
+}
+
+.logout:hover{
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer{
+  margin-top: 45px;
+  height: 50px;
+  text-align: center;
+  width: 69em;
+  background-color: slateblue;
+}
+#p-text{
+   
+   color: white;
+   font-weight: bold;
+   
+}
+
+.jwt-container{
+  height: 600px;
+  margin-top: 50px;
+  width: 900px;
+  min-height: 400px;
+}
+
+
+</style>
+<nav>
+  <p id = "nav-text"style = "color: white;font-weight:bold">Image Uploading Process</p>
+</p>
+<a class = "logout" href= "/">Logout!</a>
+</nav>
+<form action="/img-upload" method="POST" enctype="multipart/form-data">
+  <h4>Pick a Picture</h4>
+  <p>Allowed Picture Formats: JPG/PNG/JPEG/GIF</p>
+  <input type="file" id="file" name = "file" />
+  <label for="file" >choose a file</label>
+<!--  <input type="file" name="file" id="file" /> -->
+  <br />
+  <button type="submit">Submit</button>
+
+</form>
+
+<footer>
+  <p id = "p-text">End(Footer)(Thank You!)</p>
+</footer>
+<div class="jwt-container">
+  <p style = "text-align: center;
+  margin-left: 22em;
+  font-size: 22px;
+  color: green; 
+  ">JWT Public-Key</p>
+  <p>{{message}}</p>
+</div>
+{% endblock%}
