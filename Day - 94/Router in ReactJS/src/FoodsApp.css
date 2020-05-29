@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    background: grey;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav{
+  color: #fff;
+  text-decoration: none;
+
+}
+.main-foods{
+    background-size: cover;
+
+}   

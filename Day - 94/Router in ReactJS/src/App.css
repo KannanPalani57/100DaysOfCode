@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Chelsea Market', cursive;
+ /* background: rgb(37, 46, 46); */
+}
+
+.active{
+  color: pink;
+  border-bottom: darkorchid;
+}
+
+.App {
+  color: white;
+  text-align: center;
+}
+
