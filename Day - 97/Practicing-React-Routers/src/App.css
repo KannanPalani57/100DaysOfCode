@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@1&family=Chelsea+Market&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Caladea', serif;
+}
+.App {
+  text-align: center;
+}
+
+.Nav-bar{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  
+  align-items: center;
+ text-decoration: none;
+ background-color: darkslateblue;
+}
+
+.Nav-bar .link{
+  margin-left: 90px;
+  color: white;
+  text-decoration: none;
+}
+
+.Nav-bar h3{
+  margin-left: 20px;
+  font-weight: bolder;
+  color: white;
+  font-weight: bold;
+}
+
+.Nav-bar .active-link{
+  color: white;
+  border-bottom: 2.5px solid white;
+  border-radius: 1px;
+}
